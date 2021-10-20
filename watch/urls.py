@@ -18,7 +18,12 @@ from django.urls import path
 
 from watch.views import index
 from .views import index
+from .views import shop
+from .views import contact
 urlpatterns = [
     path('', index),
     path('admin/', admin.site.urls),
+    path('shop.html',shop),
+    path('contact.html',contact),
+    path('index.html', index),
 ]

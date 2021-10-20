@@ -23,3 +23,10 @@ def index(request):
         HttpResponse("thanks for submitting your form, we'll be in touch")
 
     return render(request, 'pages/index.html',{})
+
+
+def shop(request):
+    return render(request, 'pages/shop.html')
+
+def contact(request):
+    return render(request, 'pages/contact.html')    
